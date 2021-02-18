@@ -4,7 +4,7 @@ file stracture:
 ```
 /
 |-di
-| |-- provider
+| |-- Provider
 |-network
 | |-- Api
 |-utils
@@ -18,20 +18,24 @@ file stracture:
 
 the view has Main activity with an image and use the view model to get the image uri with live data.
 
-the view model: 
--fetch the image by:
---get the nextImage url
---fetch the file using retrofit.
---save the file to the files dir
---delete the picture dir
---nzip the to pictures dir
---tke the first file and post the file uri
+the view model:
 
-the fetch file is done in the background using ExecutorService thread pull.
+fetch the image by:
+```
+- get the nextImage url
+- fetch the file using retrofit.
+- save the file to the files dir
+- delete the picture dir
+- nzip the to pictures dir
+- take the first file and post the file uri
+```
 
-the network call is done with Retrofit implementing the Api interface.
+
+the fetch file is done in the background using ExecutorService with thread pull.
+
+the network call is done using Retrofit implementing the Api interface.
 
 PerfUtil and SharedPrefernce to save the last imageIndex.
 
-objects are injected by the service locator "Provider".
+objects are injected with the service locator "Provider".
 
