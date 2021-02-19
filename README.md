@@ -1,6 +1,6 @@
 # ex1
 
-file stracture:
+file structure:
 ```
 /
 |-di
