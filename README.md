@@ -26,12 +26,12 @@ fetch the image by:
 - fetch the file using retrofit.
 - save the file to the files dir
 - delete the picture dir
-- nzip the to pictures dir
-- take the first file and post the file uri
+- unzip the to pictures dir
+- find the first file and post the file uri
 ```
 
 
-the fetch file is done in the background using ExecutorService with thread pull.
+the file processing is done in the background using ExecutorService with thread pull.
 
 the network call is done using Retrofit implementing the Api interface.
 
